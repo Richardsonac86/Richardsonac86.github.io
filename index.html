@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Richardson Costa – Testes de Software e QA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f2f5f3; --surface:#ffffff; --ink:#15262b; --muted:#52666b;
+  --line:#d3ddd9; --accent:#0e5a66; --pass:#1f7a4f; --accent-ink:#ffffff;
+  --head:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
+  --body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f1b1e; --surface:#16272b; --ink:#e8f0ee; --muted:#9db3b6;
+    --line:#274046; --accent:#6cc4d1; --pass:#5fd59b; --accent-ink:#0f1b1e;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f1b1e; --surface:#16272b; --ink:#e8f0ee; --muted:#9db3b6;
+  --line:#274046; --accent:#6cc4d1; --pass:#5fd59b; --accent-ink:#0f1b1e;
+  color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 var(--body)}
+.wrap{max-width:46rem;margin:0 auto;padding:2.5rem 1.25rem 4rem}
+h1,h2,h3{font-family:var(--head);line-height:1.15;margin:0}
+h1{font-size:clamp(2.4rem,9vw,3.6rem);font-weight:800;letter-spacing:-.02em}
+.role{font-family:var(--head);font-weight:500;font-size:1.25rem;color:var(--accent);margin:.5rem 0 .25rem}
+.loc{color:var(--muted);margin:0 0 1.25rem}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:600;padding:.7rem 1.2rem;border-radius:.5rem}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--pass);outline-offset:3px}
+section{margin-top:2.75rem}
+h2{font-size:1.5rem;font-weight:700;padding-bottom:.5rem;border-bottom:2px solid var(--line);margin-bottom:1.1rem}
+p{margin:0 0 1rem}
+.suite{display:grid;grid-template-columns:1fr;gap:1.1rem}
+@media (min-width:36rem){.suite{grid-template-columns:1fr 1fr}}
+.group{background:var(--surface);border:1px solid var(--line);border-radius:.6rem;padding:1rem 1.1rem}
+.group h3{font-size:1.05rem;font-weight:700;margin-bottom:.5rem}
+.group ul{list-style:none;margin:0;padding:0}
+.group li{padding-left:1.5rem;position:relative;margin:.2rem 0}
+.group li::before{content:"✓";position:absolute;left:0;color:var(--pass);font-weight:700}
+.job{border-left:3px solid var(--accent);padding:0 0 .25rem 1.1rem;margin-bottom:1.75rem}
+.job h3{font-size:1.2rem;font-weight:700}
+.job .meta{color:var(--muted);margin:.15rem 0 .6rem}
+.job ul,.plain{margin:0;padding-left:1.2rem}
+.job li,.plain li{margin:.25rem 0}
+.plain{list-style:none;padding:0}
+.plain li{padding-left:0;margin:.6rem 0}
+.plain span{display:block;color:var(--muted)}
+footer{margin-top:3rem;padding-top:1.25rem;border-top:1px solid var(--line);color:var(--muted)}
+footer a{color:var(--accent)}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <h1>Richardson Costa</h1>
+    <p class="role">Desenvolvedor de Testes | Analista de Testes | QA de Software</p>
+    <p class="loc">Manaus, Amazonas, Brasil</p>
+    <a class="btn" href="https://www.linkedin.com/in/richardson-costa-2ab8ba133" target="_blank" rel="noopener">Ver perfil no LinkedIn</a>
+  </header>
+
+  <section>
+    <h2>Resumo profissional</h2>
+    <p>Profissional de TI com mais de 20 anos de carreira, dos quais mais de 5 anos dedicados a testes de software como Desenvolvedor de Testes Jr no Sidia Instituto de Ciência e Tecnologia. Conhecimento em automação de testes end-to-end (Playwright e Cypress), testes de APIs, HTTP/HTTPS, SQL, Git e noções de CI/CD, com uso diário de Python, Node.js, JIRA e GitHub.</p>
+    <p>Base sólida em redes, infraestrutura e suporte técnico, que traz visão ampla do ambiente em que o software roda. Pós-graduado (MBA) em Engenharia de Software, com curso preparatório para o CTFL (ISTQB Foundation) e fluência em ferramentas de IA.</p>
+  </section>
+
+  <section>
+    <h2>Competências técnicas</h2>
+    <div class="suite">
+      <div class="group"><h3>Testes</h3><ul>
+        <li>Teste manual e automatizado</li><li>Realização de testes</li><li>Qualidade de software</li></ul></div>
+      <div class="group"><h3>Automação E2E</h3><ul>
+        <li>Playwright</li><li>Cypress</li></ul></div>
+      <div class="group"><h3>APIs e web</h3><ul>
+        <li>Testes de API, manual e automatizado</li><li>Protocolo HTTP/HTTPS</li><li>Inspeção com DevTools</li></ul></div>
+      <div class="group"><h3>Programação e dados</h3><ul>
+        <li>Lógica de programação</li><li>JavaScript, Python, Node.js, SASS</li><li>Noções de SQL (consultas no banco)</li></ul></div>
+      <div class="group"><h3>Ferramentas</h3><ul>
+        <li>JIRA</li><li>Git e GitHub</li><li>Noções de CI/CD</li><li>IA aplicada ao trabalho</li></ul></div>
+      <div class="group"><h3>Redes e infraestrutura</h3><ul>
+        <li>Redes sem fio e administração de redes</li><li>Active Directory</li><li>VMware e virtualização</li><li>Arquitetura de servidores</li></ul></div>
+    </div>
+    <p style="margin-top:1.1rem"><strong>Idiomas:</strong> Português (nativo), Inglês (intermediário)</p>
+  </section>
+
+  <section>
+    <h2>Experiência profissional</h2>
+    <article class="job">
+      <h3>Desenvolvedor de Testes Jr</h3>
+      <p class="meta">Sidia Instituto de Ciência e Tecnologia · mai/2021 até hoje · Manaus, AM</p>
+      <ul>
+        <li>Atuação em testes de software, com uso de Python e Node.js.</li>
+        <li>Registro e acompanhamento de atividades e defeitos no JIRA.</li>
+        <li>Controle de versão e colaboração em código com GitHub.</li>
+        <li>Conhecimento em tecnologias de rede sem fio.</li>
+      </ul>
+    </article>
+    <article class="job">
+      <h3>IT Analyst</h3>
+      <p class="meta">Electrolux · nov/2018 a nov/2021 · Manaus, AM · Tempo integral</p>
+      <ul>
+        <li>Implementação da rede Wi-Fi da fábrica de Manaus.</li>
+        <li>Administração de redes, Active Directory e infraestrutura VMware.</li>
+        <li>Gestão de infraestrutura de TI, arquitetura de servidores, virtualização e auditoria de TI.</li>
+        <li>Participação em projetos de infraestrutura de redes.</li>
+      </ul>
+    </article>
+    <article class="job">
+      <h3>Analista de Suporte</h3>
+      <p class="meta">Seculus da Amazônia · set/2005 a set/2018 · Manaus e região · Tempo integral</p>
+      <ul>
+        <li>Suporte técnico e suporte de campo a usuários e equipamentos.</li>
+        <li>Suporte de aplicativos, administração de redes e Active Directory.</li>
+        <li>Atuação em infraestrutura de TI, redes sem fio e ambientes VMware.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section>
+    <h2>Formação acadêmica</h2>
+    <ul class="plain">
+      <li><strong>MBA em Computer Software Engineering</strong><span>Faculdade Metropolitana · mar/2023 a set/2025</span></li>
+      <li><strong>Tecnologia em Redes de Computadores</strong><span>UniNorte (Centro Universitário do Norte) · 2015 a 2018</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Certificações e cursos</h2>
+    <ul class="plain">
+      <li><strong>Fundamentos do Teste de Software – Preparatório CTFL</strong><span>TIexames · dez/2021</span></li>
+      <li><strong>Claude Academy: AI Fluency – Framework and Foundations</strong><span>Anthropic · nov/2026</span></li>
+      <li><strong>Formação inicial KeyUser SAP (MM, PP, SD, PM, QM, FI e CO)</strong><span>MDL Consulting · abr/2018</span></li>
+    </ul>
+  </section>
+
+  <footer>
+    Para falar comigo, chame pelo <a href="https://www.linkedin.com/in/richardson-costa-2ab8ba133" target="_blank" rel="noopener">LinkedIn</a>.
+  </footer>
+</main>
+</body>
+</html>
